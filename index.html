@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Network with undo/redo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body onload="draw();">
+  <h2>Network with undo/redo</h2>
+  <div id="button_undo">undo
+    <i class="fas fa-arrow-left "></i>
+  </div>
+  <div id="button_redo">redo
+    <i class="fas fa-arrow-right  "></i>
+  </div>
+  <div id="network-popUp">
+    <span id="operation">node</span> <br>
+    <table style="margin:auto;">
+      <tr>
+        <td>id</td>
+        <td><input id="node-id" value="new value" /></td>
+      </tr>
+      <tr>
+        <td>label</td>
+        <td><input id="node-label" value="new value" /></td>
+      </tr>
+    </table>
+    <input type="button" value="save" id="saveButton" />
+    <input type="button" value="cancel" id="cancelButton" />
+  </div>
+  <br />
+  <div id="mynetwork"></div>
+</body>
+  <script src="sample.js"></script>
+  <link rel="stylesheet" href="sample.css" />
+</html>
